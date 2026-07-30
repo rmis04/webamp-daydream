@@ -1,0 +1,52 @@
+
+<div id="app"></div>
+
+<script type="module">
+import Webamp from "https://unpkg.com/webamp@^2";
+
+const webamp = new Webamp({
+  initialTracks: [
+    {
+      metaData: {
+        artist: "Riize",
+        title: "Love 119"
+      },
+      url: "https://files.catbox.moe/pzptkn.mp3"
+    },
+    {
+      metaData: {
+        artist: "Riize",
+        title: "One Kiss"
+      },
+      url: "https://example.com/song2.mp3"
+    },
+    {
+      metaData: {
+        artist: "Riize",
+        title: "Memories"
+      },
+      url: "https://files.catbox.moe/mt8ssj.mp3"
+    }
+        {
+      metaData: {
+        artist: "Riize",
+        title: "In A Loop"
+      },
+      url: "https://files.catbox.moe/uwdsvl.mp3"
+    }
+          {
+      metaData: {
+        artist: "Riize",
+        title: "Sticky Like"
+      },
+      url: "https://files.catbox.moe/ji9vqe.mp3"
+    }
+  ]
+});    
+                 
+
+webamp.renderWhenReady(document.getElementById("app"));
+</script>
+
+</body>
+</html>
